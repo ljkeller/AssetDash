@@ -1,19 +1,17 @@
-const http = require('http');
-const fs = require('fs');
+const express = require('express'),
+      path    = require('path');
+const app = express();
+const port = 3000;
 
-const server = http.createServer((req, res) => {
-  fs.readFile('index.html', (err, data) => {
-    if (err) {
-      res.writeHead(404);
-      res.write('File not found!');
-    } else {
-      res.writeHead(200, {'Content-Type': 'text/html'});
-      res.write(data);
-    }
-    res.end();
-  });
+// Serve static files from the public directory
+app.use(express.static(path.join(__dirname, '/public')));
+
+// Handle GET requests to the root URL
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/public/index.html');
 });
 
-server.listen(3000, () => {
-  console.log('Server is running on http://localhost:3000');
+// Start the server
+app.listen(port, () => {
+  console.log(`Server listening at http://localhost:${port}`);
 });
