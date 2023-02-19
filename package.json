@@ -1,0 +1,26 @@
+{
+  "name": "assetdash",
+  "version": "1.0.0",
+  "description": "A webpage to manage shared assets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ljkeller/AssetDash.git"
+  },
+  "keywords": [
+    "asset",
+    "management",
+    "assets",
+    "dashboard",
+    "assetdash"
+  ],
+  "author": "Lucas Keller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ljkeller/AssetDash/issues"
+  },
+  "homepage": "https://github.com/ljkeller/AssetDash#readme"
+}
