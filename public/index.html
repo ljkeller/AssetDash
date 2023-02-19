@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>AssetDash</title>
   <link rel="stylesheet" type="text/css" href="index.css">
+  <!-- Allow more dynamic sizing / portability across devices -->
+  <meta name="viewport" content="width=device-width,
+                     initial-scale=1.0">
 </head>
-  <body>
-    <div class="container">
-        <h1>Abstract Asset Dashboard</h1>
-        <p>This is where the assets will be displayed and managed.</p>
-        <button>Add Asset</button>
+
+<header>
+  <div class="logo-main">
+    <div class="logo">AssetManager</div>
+    <img src="imgs/menu.png"
+      class="icon menuicon" id="menu-icn" alt="menu-icon">
+  </div>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search">
+    <div class="search-btn">
+      <img src="imgs/search.png"
+        class="icon searchicon" alt="search-icon">
     </div>
-  </body>
+  </div>
+  </div>
+
+  <div class="account-notis">
+    <div class="circle"></div>
+    <img src="imgs/notification.png" class="icon" alt="Notifications">
+    <div class="dynamic-profile">
+      <img src="imgs/headshot.jpeg"
+        class="dynamic-profile-icon" alt="Profile-Pic">
+    </div>
+  </div>
+
+</header>
+
+<body>
+  <div class="main-container">
+
+    <div class="main">
+      <h1>Abstract Asset Dashboard</h1>
+      <p>This is where the assets will be displayed and managed.</p>
+      <button>Add Asset</button>
+    </div>
+  </div>
+</body>
+
 </html>
