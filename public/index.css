@@ -147,6 +147,62 @@ header {
     color: var(--primary-color);
 }
 
+.nav {
+    min-height: 91vh;
+    width: 250px;
+    background-color: var(--background-color2);
+    /* Place sticky with abs */
+    position: absolute;
+    top: 0px;
+    left: 00;
+    box-shadow: 1px 1px 10px var(--two-use-color);
+    /* flow vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 30px 0 20px 10px;
+}
+
+.nav-container {
+    height: calc(100vh - 70px);
+    width: 300px;
+    position: relative;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* all elements should transition in 0.5s smoothly */
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-option {
+    width: 250px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px 0 20px;
+    gap: 20px;
+    transition: all 0.1 ease-in-out;
+    color: var(--primary-color);
+}
+
+.nav-option:hover {
+    border-left: 5px solid var(--Border-color);
+    background-color: var(--two-use-color);
+    cursor: pointer;
+}
+
+.nav-img {
+    height: 30px;
+}
+
+.nav-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
 button {
     display: inline-block;
     padding: 0.5rem 1rem;
