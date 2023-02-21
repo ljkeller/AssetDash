@@ -84,7 +84,7 @@ header {
     border: none;
     color: var(--primary-color);
 }
-
+  
 .search-btn {
     width: 50px;
     height: 42px;
@@ -147,15 +147,26 @@ header {
     color: var(--primary-color);
 }
 
+.main::-webkit-scrollbar-thumb {
+    background-image:
+        linear-gradient(to bottom, var(--secondary-color), var(--two-use-color));
+}
+.main::-webkit-scrollbar {
+    width: 5px;
+}
+.main::-webkit-scrollbar-track {
+    background-color: var(--background-color3);
+}
+
 .nav {
     min-height: 91vh;
-    width: 250px;
+    width: 235px;
     background-color: var(--background-color2);
     /* Place sticky with abs */
     position: absolute;
     top: 0px;
     left: 00;
-    box-shadow: 1px 1px 10px var(--two-use-color);
+    box-shadow: 1px 1px 15px var(--two-use-color);
     /* flow vertically */
     display: flex;
     flex-direction: column;
@@ -173,6 +184,9 @@ header {
     overflow-x: hidden;
     /* all elements should transition in 0.5s smoothly */
     transition: all 0.5s ease-in-out;
+}
+.nav-container::-webkit-scrollbar {
+    display: none;
 }
 
 .nav-option {
