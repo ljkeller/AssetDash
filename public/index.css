@@ -189,6 +189,10 @@ header {
     display: none;
 }
 
+.navclose {
+    width: 0px;
+}
+
 .nav-option {
     width: 250px;
     height: 60px;
