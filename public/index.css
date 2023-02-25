@@ -13,6 +13,7 @@
 
     --primary-color: #EBEAEB;
     --secondary-color: #5AC8F5;
+    --secondary-color-tetr1: #F68759;
     --tertiary-color: #FF453A;
     --complementing-color: #F5D55A;
 
@@ -66,7 +67,7 @@ header {
 .logo-main {
     gap: 15px;
     /* blue(Asset)white(manager) */
-    background: linear-gradient(to right, var(--complementing-color) 32%, var(--primary-color) 32%);
+    background: linear-gradient(to right, var(--secondary-color-tetr1) 32%, var(--primary-color) 32%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -230,7 +231,7 @@ header {
     margin: 70px auto 0 auto;
     background-color: var(--background-color2);
     border-radius: 30px;
-    box-shadow: 3px 3px 10px var(--two-use-color);
+    box-shadow: 3px 3px 15px var(--two-use-color);
     padding: 0 20px 20px 20px;
 }
 
