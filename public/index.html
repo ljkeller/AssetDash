@@ -70,44 +70,109 @@
       </div>
     </div>
 
-    <!-- <div class="main">
-      <h1>Abstract Asset Dashboard</h1>
-      <p>This is where the assets will be displayed and managed.</p>
-      <button>Add Asset</button>
-    </div> -->
+    <div class="main">
+      <div class="analytic-container">
 
-    <div class="analytic-container">
-
-      <div class="analytic active-users">
-        <div class="text">
-          <h2 class="topic-heading">15</h2>
-          <h2 class="topic">Active Users</h2>
+        <div class="analytic active-users">
+          <div class="text">
+            <h2 class="topic-heading">15</h2>
+            <h2 class="topic">Active Users</h2>
+          </div>
+          <img src="imgs/users.png" alt="Users">
         </div>
-        <img src="imgs/users.png" alt="Users">
+
+        <div class="analytic notifications">
+          <div class="text">
+            <h2 class="topic-heading">6</h2>
+            <h2 class="topic">Chat Notifications</h2>
+          </div>
+          <img src="imgs/notifications.png" , alt="Notifications">
+        </div>
+
+        <div class="analytic assets-claimed">
+          <div class="text">
+            <h2 class="topic-heading">70%</h2>
+            <h2 class="topic">Assets Claimed</h2>
+          </div>
+          <img src="imgs/assets.png" alt="Assets">
+        </div>
+
+        <div class="analytic asset-health">
+          <div class="text">
+            <h2 class="topic-heading">60/40/10</h2>
+            <h2 class="topic">on/off/maint. state</h2>
+          </div>
+          <img src="imgs/pie_chart.png" , alt="Pie Chart">
+        </div>
+
       </div>
 
-      <div class="analytic notifications">
-        <div class="text">
-          <h2 class="topic-heading">6</h2>
-          <h2 class="topic">Chat Notifications</h2>
+      <div class="asset-container">
+        <div class="asset-header">
+          <h1 class="sorted-assets">Assets</h1>
+          <button class="view-button">View All</button>
         </div>
-        <img src="imgs/notifications.png", alt="Notifications">
-      </div>
 
-      <div class="analytic assets-claimed">
-        <div class="text">
-          <h2 class="topic-heading">70%</h2>
-          <h2 class="topic">Assets Claimed</h2>
-        </div>
-        <img src="imgs/assets.png" alt="Assets">
-      </div>
+        <div class="asset-body">
+          <div class="asset-cols-heading">
+            <h3 class="col-option">Name</h3>
+            <h3 class="col-option">Model</h3>
+            <h3 class="col-option">State</h3>
+            <h3 class="col-option">Availability</h3>
+          </div>
 
-      <div class="analytic asset-health">
-        <div class="text">
-          <h2 class="topic-heading">60/40/10</h2>
-          <h2 class="topic">on/off/maint. state</h2>
+          <div class="items">
+            <div class="item-simple">
+              <h3 class="col-option-body">Crp53421</h3>
+              <h3 class="col-option-body">Windows Machine</h3>
+              <h3 class="col-option-body state-tag">On</h3>
+              <h3 class="col-option-body availibility-tag">Claimed</h3>
+            </div>
+            <div class="item-simple">
+              <h3 class="col-option-body">lnx777</h3>
+              <h3 class="col-option-body">Linux Machine</h3>
+              <h3 class="col-option-body state-tag">On</h3>
+              <h3 class="col-option-body availibility-tag">Availible</h3>
+            </div>
+            <div class="item-simple">
+              <h3 class="col-option-body">lnx776</h3>
+              <h3 class="col-option-body">Linux Machine</h3>
+              <h3 class="col-option-body state-tag">On</h3>
+              <h3 class="col-option-body availibility-tag">Claimed</h3>
+            </div>
+            <div class="item-simple">
+              <h3 class="col-option-body">SN-444</h3>
+              <h3 class="col-option-body">IoT-2036</h3>
+              <h3 class="col-option-body state-tag">Maintenance</h3>
+              <h3 class="col-option-body availibility-tag">Claimed</h3>
+            </div>
+            <div class="item-simple">
+              <h3 class="col-option-body">SN-37</h3>
+              <h3 class="col-option-body">IoT-2036</h3>
+              <h3 class="col-option-body state-tag">On</h3>
+              <h3 class="col-option-body availibility-tag">Availible</h3>
+            </div>
+            <div class="item-simple">
+              <h3 class="col-option-body">SN-238</h3>
+              <h3 class="col-option-body">IoT-2036</h3>
+              <h3 class="col-option-body state-tag">On</h3>
+              <h3 class="col-option-body availibility-tag">Availible</h3>
+            </div>
+            <div class="item-simple">
+              <h3 class="col-option-body">Crp32459</h3>
+              <h3 class="col-option-body">Windows Machine</h3>
+              <h3 class="col-option-body state-tag">Off</h3>
+              <h3 class="col-option-body availibility-tag">Availible</h3>
+            </div>
+            <div class="item-simple">
+              <h3 class="col-option-body">Crp53421</h3>
+              <h3 class="col-option-body">Windows Machine</h3>
+              <h3 class="col-option-body state-tag">On</h3>
+              <h3 class="col-option-body availibility-tag">Claimed</h3>
+            </div>
+          </div>
+
         </div>
-        <img src="imgs/pie_chart.png", alt="Pie Chart">
       </div>
 
     </div>
@@ -115,4 +180,5 @@
 </body>
 
 <script src="index.js"></script>
+
 </html>
