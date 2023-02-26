@@ -6,7 +6,8 @@ const express = require('express'),
     router = express.Router();
 
 // Internal
-const User = require('../model/User');
+const User = require('../model/User'),
+      auth = require('../middleware/auth');
 
 /**
  * @method - POST
@@ -99,5 +100,22 @@ router.post(
         }
     }
 )
+
+/**
+ * @method - get
+ * @param - /me
+ * @description - get logged in User
+ */
+router.get(
+    '/me',
+    auth,
+    async (req, res) => {
+        try {
+            const user = await User.findById(req.user.id);
+            res.json(user);
+        } 
+        catch (e) { res.send({ message: 'Error in Fetching User' })}
+    }
+);
 
 module.exports = router;

@@ -1,9 +1,5 @@
 const mongoose = require('mongoose');
-// import { MONGOURI } from "./secrets";
-// const MONGOURI = require('./secrets');
 const { MONGO_URI } = require('./secrets');
-
-console.log(MONGO_URI);
 
 const InitiateMongoServer = async () => {
     try {
