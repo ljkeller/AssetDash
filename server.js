@@ -23,6 +23,9 @@ app.get('/', (req, res) => {
 app.get('/login', (req, res) => {
   res.sendFile(__dirname + '/public/login.html');
 });
+app.get('/sign-up', (req, res) => {
+  res.sendFile(__dirname + '/public/signup.html');
+});
 
 /**
  * Router Middleware
