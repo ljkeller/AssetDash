@@ -1,11 +1,8 @@
 const form = document.querySelector('.login-box');
-console.log(form);
 form.addEventListener('submit', (event) => {
     // dont let user spam empty boxes
     event.preventDefault();
     
-    let email = document.getElementById('email').value;
-    let password = document.getElementById('password').value;
     let payload = JSON.stringify({
         email : document.getElementById('email').value,
         password : document.getElementById('password').value
@@ -23,7 +20,7 @@ form.addEventListener('submit', (event) => {
             });
 
             if (!res.ok) { throw new Error('Failure to login: '.concat(res.status));};
-            tok = await res.json();
+            const jwt = await res.json();
             location.href='/';
 
             // TODO: embedd JWT into auth bearer?
@@ -33,6 +30,5 @@ form.addEventListener('submit', (event) => {
         }
     })();
      
-
-    console.log(`email: ${email} pass: ${password}`);
+    console.log(`Login payload: ${payload}`);
 });
