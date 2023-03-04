@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 app.get('/login', (req, res) => {
   res.sendFile(__dirname + '/public/login.html');
 });
-app.get('/sign-up', (req, res) => {
+app.get('/signup', (req, res) => {
   res.sendFile(__dirname + '/public/signup.html');
 });
 
