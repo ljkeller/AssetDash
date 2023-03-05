@@ -47,6 +47,32 @@ router.post(
     }
 )
 
+router.put(
+    '/availibility',
+    [
+        check('name', 'Must pass an asset for the update').notEmpty(),
+        check('availibility', 'Must pass an availibility for the asset').notEmpty()
+    ],
+    async (req, res) => {
+        errors = validationResult(req);
+        if (!errors.isEmpty()) return res.status(400).json({ errors: errors.array() });
+
+        //TODO: Validate that only user with asset claimed can undo claim
+        const { assetName, availibility } = req.body;
+        try {
+            // To enforce validation, use findOne over findOneAndUpdate
+            let asset = await Asset.findOne({assetName});
+            asset.availibility = availibility;
+
+            const updated = await asset.save();
+            res.status(200).json(updated);
+        } catch (err) {
+            console.log(err.message);
+            res.status(500).send('Error in updating asset availiblity');
+        }
+    }
+)
+
 router.get(
     '/name',
     [
