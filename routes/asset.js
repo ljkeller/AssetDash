@@ -47,4 +47,27 @@ router.post(
     }
 )
 
+router.get(
+    '/name',
+    [
+        check('name', 'Please enter a valid asset name').notEmpty()
+    ],
+    async (req, res) => {
+        try {
+            const errors = validationResult(req);
+            if (!errors.isEmpty()) return res.status(400).json({ errors: errors.array() });
+
+            const { name } = req.body;
+            const asset = await Asset.findOne({ name });
+
+            if (!asset) return res.status(400).json({ message: 'Asset does not exist' });
+            res.status(200).json(asset);
+
+        } catch (err) {
+            console.log(err.message);
+            res.status(500).send('Error in retrieval of asset name');
+        }
+    }
+)
+
 module.exports = router;
