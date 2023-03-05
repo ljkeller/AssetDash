@@ -12,7 +12,7 @@ const AssetSchema = mongoose.Schema({
     state : {
         type: String,
         enum: ['on', 'off', 'maintenance'],
-        default: ['maintenance'],
+        default: 'maintenance',
         required: true
     },
     availibility: {
