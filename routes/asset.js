@@ -42,7 +42,7 @@ router.post(
         } catch (err)
         {
             console.log(err.message);
-            res.status(500).send('Error in saving');
+            res.status(500).send('Error in storing asset to DB');
         }
     }
 )
