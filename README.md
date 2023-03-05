@@ -10,6 +10,7 @@ A web app to manage shared assets. Inspired by a hardware sharing problem I've e
 ### Authentication
 - Express-Validator, Jsonwebtoken, Bcryptjs
 
-Example dashboard views:
+Example dashboard view:
 
-![AssetManager](https://user-images.githubusercontent.com/44109284/221434532-9a64eb2a-10cc-4ff2-966b-07fc27ebafc9.jpeg)
+https://user-images.githubusercontent.com/44109284/222934374-6ad785fc-0dc7-4400-9012-bb0348423e3c.mov
+
