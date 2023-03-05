@@ -5,7 +5,8 @@ const express    = require('express'),
 
 // Internal
 const InitiateMongoServer = require('./config/db'),
-      user                = require('./routes/user');
+      user                = require('./routes/user'),
+      asset               = require('./routes/asset');
 
 InitiateMongoServer();
 const app = express();
@@ -33,6 +34,12 @@ app.get('/signup', (req, res) => {
  * Method - *
  */
 app.use('/user', user);
+/**
+ * Router Middleware
+ * Router - /asset/*
+ * Method - *
+ */
+app.use('/asset', asset);
 
 // Start the server
 app.listen(PORT, () => {
