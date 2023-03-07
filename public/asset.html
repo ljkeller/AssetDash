@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Asset Info</title>
+  <link rel="stylesheet" type="text/css" href="asset.css">
+  <!-- Allow more dynamic sizing / portability across devices -->
+  <meta name="viewport" content="width=device-width,
+                     initial-scale=1.0">
+</head>
+
+<header>
+  <div class="logo-main">
+    <div class="logo">AssetManager</div>
+    <img src="imgs/menu.png" class="icon menuicon" id="menu-icn" alt="menu-icon">
+  </div>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search">
+    <div class="search-btn">
+      <img src="imgs/search.png" class="icon searchicon" alt="search-icon">
+    </div>
+  </div>
+  </div>
+
+  <div class="account-notis">
+    <div class="circle"></div>
+    <img src="imgs/notification.png" class="icon" alt="Notifications">
+    <div class="dynamic-profile">
+      <img src="imgs/headshot.jpeg" class="dynamic-profile-icon" alt="Profile-Pic">
+    </div>
+  </div>
+
+</header>
+
+<body>
+  <div class="main-container">
+    <div class="nav-container">
+      <div class="nav">
+        <div class="nav-options">
+          <div class="nav-option dashboard">
+            <img src="imgs/dash.png" , class="nav-img" , alt="dashboard">
+            <h3> Dashboard</h3>
+          </div>
+          <div class="nav-option assets">
+            <img src="imgs/assets.png" , class="nav-img" , alt="assets">
+            <h3> Assets</h3>
+          </div>
+          <div class="nav-option chat">
+            <img src="imgs/chat.png" , class="nav-img" , alt="chat">
+            <h3> Chat</h3>
+          </div>
+          <div class="nav-option groups">
+            <img src="imgs/groups.png" , class="nav-img" , alt="groups">
+            <h3> Groups</h3>
+          </div>
+          <div class="nav-option profile">
+            <img src="imgs/profile.png" , class="nav-img" , alt="profile">
+            <h3> Profile</h3>
+          </div>
+          <div class="nav-option settings">
+            <img src="imgs/settings.png" , class="nav-img" , alt="settings">
+            <h3> Settings</h3>
+          </div>
+          <div class="nav-option logout">
+            <img src="imgs/logout.png" , class="nav-img" , alt="logout">
+            <h3> Logout</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="asset-container">
+        <div class="asset-header">
+          <h1 class="sorted-assets">Asset: Crp53421</h1>
+          <button class="view-button">Claim</button>
+        </div>
+
+        <div class="asset-body">
+          <div class="asset-cols-heading">
+            <h3 class="col-option">Build</h3>
+            <h3 class="col-option">Model</h3>
+            <h3 class="col-option">State</h3>
+            <h3 class="col-option">Availability</h3>
+            <h3 class="col-option">User</h3>
+          </div>
+
+          <div class="items">
+            <div class="item-simple">
+              <h3 class="col-option-body">17.921</h3>
+              <h3 class="col-option-body">Windows Machine</h3>
+              <h3 class="col-option-body state-tag">On</h3>
+              <h3 class="col-option-body availibility-tag">Claimed</h3>
+              <h3 class="col-option-body user-tag">John Smitty</h3>
+            </div>
+            <div class="notes">
+              <div class="notes-heading">
+                <h2 class="notes-col-heading">Notes</h2>
+                <h2 class="notes-col-time">Time</h2>
+              </div>
+              <div class="item-note">
+                <p class="col-option-note note-tag">Last time I used this asset, it was power cycling intermittently</p>
+                <time datetime="2023-02-14 20:14" class="col-option-body time-tag">2023-02-14 20:14</time>
+              </div>
+              <div class="item-note">
+                <p class="col-option-note note-tag">Looks like we were letting this asset get too hot... Hopefully it doesn't run into issues. Put a fan on it today.</p>
+                <time datetime="2023-02-14 20:14" class="col-option-body time-tag">2023-02-11 08:35</time>
+              </div>
+              <div class="item-note">
+                <p class="col-option-note note-tag">Borrowing this asset from team Falcon. Don't be surprised if they ask for it back.</p>
+                <time datetime="2023-02-14 20:14" class="col-option-body time-tag">2023-01-20 09:58</time>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+<script src="asset.js"></script>
+
+</html>

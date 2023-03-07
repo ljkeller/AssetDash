@@ -21,6 +21,12 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');
 });
+app.get('/dashboard', (req, res) => {
+  res.sendFile(__dirname + '/public/index.html');
+});
+app.get('/asset', (req, res) => {
+  res.sendFile(__dirname + '/public/asset.html');
+});
 app.get('/login', (req, res) => {
   res.sendFile(__dirname + '/public/login.html');
 });
