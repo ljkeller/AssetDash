@@ -9,11 +9,13 @@ function setupNav() {
 
     dashboard_nav.addEventListener('click', () => { location.href = '/dashboard'; });
     assets_nav.addEventListener('click', () => { location.href = '/asset'; });
+    logout_nav.addEventListener('click', () => { location.href = '/login'; });
+
+    // TODO
     chat_nav.addEventListener('click', () => { alert('Unimplemented nav!') });
     groups_nav.addEventListener('click', () => { alert('Unimplemented nav!') });
     profile_nav.addEventListener('click', () => { alert('Unimplemented nav!') });
     settings_nav.addEventListener('click', () => { alert('Unimplemented nav!') });
-    logout_nav.addEventListener('click', () => { alert('Unimplemented nav!') });
     
     // TODO: Nav with JWT?
 }
