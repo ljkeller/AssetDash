@@ -12,5 +12,6 @@ A web app to manage shared assets. Inspired by a hardware sharing problem I've e
 
 Example dashboard view:
 
-https://user-images.githubusercontent.com/44109284/222934374-6ad785fc-0dc7-4400-9012-bb0348423e3c.mov
+https://user-images.githubusercontent.com/44109284/223710008-eae5ddb2-3dbe-4adb-be0c-e434920b1ff4.mov
+
 
