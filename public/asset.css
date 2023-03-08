@@ -147,9 +147,9 @@ header {
 }
 
 .asset-container {
-    min-height: 300px;
+    min-height: 600px;
     max-width: 1200px;
-    margin: 70px auto 0 auto;
+    margin: auto auto 0 auto;
     background-color: var(--background-color2);
     border-radius: 30px;
     box-shadow: 3px 3px 15px var(--two-use-color);
@@ -192,7 +192,6 @@ header {
 .items {
     width: 1120px;
     margin-top: 15px;
-
 }
 
 .item-note,
