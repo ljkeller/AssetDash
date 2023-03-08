@@ -38,33 +38,33 @@
     <div class="nav-container">
       <div class="nav">
         <div class="nav-options">
-          <div class="nav-option dashboard">
+          <div class="nav-option dashboard", id="dashboard_button">
             <img src="imgs/dash.png" , class="nav-img" , alt="dashboard">
-            <h3> Dashboard</h3>
+            <h3>Dashboard</h3>
           </div>
-          <div class="nav-option assets">
+          <div class="nav-option assets", id="assets_button">
             <img src="imgs/assets.png" , class="nav-img" , alt="assets">
-            <h3> Assets</h3>
+            <h3>Assets</h3>
           </div>
-          <div class="nav-option chat">
+          <div class="nav-option chat", id="chat_button">
             <img src="imgs/chat.png" , class="nav-img" , alt="chat">
-            <h3> Chat</h3>
+            <h3>Chat</h3>
           </div>
-          <div class="nav-option groups">
+          <div class="nav-option groups", id="groups_button">
             <img src="imgs/groups.png" , class="nav-img" , alt="groups">
-            <h3> Groups</h3>
+            <h3>Groups</h3>
           </div>
-          <div class="nav-option profile">
+          <div class="nav-option profile", id="profile_button">
             <img src="imgs/profile.png" , class="nav-img" , alt="profile">
-            <h3> Profile</h3>
+            <h3>Profile</h3>
           </div>
-          <div class="nav-option settings">
+          <div class="nav-option settings", id="settings_button">
             <img src="imgs/settings.png" , class="nav-img" , alt="settings">
-            <h3> Settings</h3>
+            <h3>Settings</h3>
           </div>
-          <div class="nav-option logout">
+          <div class="nav-option logout", id="logout_button">
             <img src="imgs/logout.png" , class="nav-img" , alt="logout">
-            <h3> Logout</h3>
+            <h3>Logout</h3>
           </div>
         </div>
       </div>
@@ -179,6 +179,7 @@
   </div>
 </body>
 
-<script src="index.js"></script>
+<!-- why is type=module? ES6 https://stackoverflow.com/questions/19059580/client-on-node-js-uncaught-referenceerror-require-is-not-defined -->
+<script type="module" src="index.js"></script>
 
 </html>
