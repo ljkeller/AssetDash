@@ -147,7 +147,7 @@ header {
 }
 
 .asset-container {
-    min-height: 600px;
+    min-height: 700px;
     max-width: 1200px;
     margin: auto auto 0 auto;
     background-color: var(--background-color2);
