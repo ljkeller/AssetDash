@@ -74,7 +74,7 @@ router.put(
 )
 
 router.post(
-    '/name',
+    '/info',
     [
         check('name', 'Please enter a valid asset name').notEmpty()
     ],
