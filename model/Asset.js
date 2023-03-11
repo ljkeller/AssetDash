@@ -9,6 +9,14 @@ const AssetSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    swBuild : {
+        type: String,
+        default: "Unknown"
+    },
+    lastOrActiveUserEmail : {
+        type: String,
+        default: "Unknown"
+    },
     state : {
         type: String,
         enum: ['on', 'off', 'maintenance'],
