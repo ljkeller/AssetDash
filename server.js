@@ -9,7 +9,10 @@ const InitiateMongoServer = require('./config/db'),
       asset               = require('./routes/asset');
 
 InitiateMongoServer();
+
 const app = express();
+app.set('view engine', 'ejs');
+
 const PORT = process.env.PORT || 3000;
 
 // Middleware
@@ -18,20 +21,22 @@ app.use(bodyParser.json());
 // Serve static files from the public directory
 app.use(express.static(path.join(__dirname, '/public')));
 // Handle GET requests to the root URL
+
+// Note that we are using render, because we are serving dynamically with ejs
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html');
+  res.render('index.ejs', {activeUsers:'14'});
 });
 app.get('/dashboard', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html');
+  res.render('index.ejs');
 });
 app.get('/asset', (req, res) => {
-  res.sendFile(__dirname + '/public/asset.html');
+  res.render('asset.ejs');
 });
 app.get('/login', (req, res) => {
-  res.sendFile(__dirname + '/public/login.html');
+  res.render('login.ejs');
 });
 app.get('/signup', (req, res) => {
-  res.sendFile(__dirname + '/public/signup.html');
+  res.render('signup.ejs');
 });
 
 /**
