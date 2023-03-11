@@ -73,7 +73,7 @@
     <div class="main">
       <div class="asset-container">
         <div class="asset-header">
-          <h1 class="sorted-assets">Asset: Crp53421</h1>
+          <h1 class="sorted-assets">Asset: <%= asset.name %></h1>
           <button class="view-button">Claim</button>
         </div>
 
@@ -88,10 +88,10 @@
 
           <div class="items">
             <div class="item-simple">
-              <h3 class="col-option-body">17.921</h3>
-              <h3 class="col-option-body">Windows Machine</h3>
-              <h3 class="col-option-body state-tag">On</h3>
-              <h3 class="col-option-body availibility-tag">Claimed</h3>
+              <h3 class="col-option-body sw-build-tag">17.921</h3>
+              <h3 class="col-option-body model-tag"><%= asset.model %></h3>
+              <h3 class="col-option-body state-tag"><%= asset.state %></h3>
+              <h3 class="col-option-body availibility-tag"><%= asset.availibility %></h3>
               <h3 class="col-option-body user-tag">John Smitty</h3>
             </div>
             <div class="notes">
