@@ -16,7 +16,10 @@ app.set('view engine', 'ejs');
 const PORT = process.env.PORT || 3000;
 
 // Middleware
+// Use JSON
 app.use(bodyParser.json());
+// Allow deeper/nested parsing
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // Serve static files from the public directory
 app.use(express.static(path.join(__dirname, '/public')));
