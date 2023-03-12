@@ -78,10 +78,11 @@
             <input id='asset-name' type="hidden", name="name", value="<%= asset.name %>">
             <% if (asset.availibility.toLowerCase() == "availible") { %>
               <input id='asset-availibility-inverse' type="hidden", name="availibility", value="claimed">
+              <button class="view-button" type="submit">Claim</button>
             <%} else {%>
               <input id='asset-availibility-inverse' type="hidden", name="availibility", value="availible">
+              <button class="view-button" type="submit">Yield</button>
             <%}%>
-            <button class="view-button" type="submit">Claim</button>
           </form>
         </div>
 
