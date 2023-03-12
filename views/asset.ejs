@@ -74,7 +74,15 @@
       <div class="asset-container">
         <div class="asset-header">
           <h1 class="sorted-assets">Asset: <%= asset.name %></h1>
-          <button class="view-button">Claim</button>
+          <form action="/asset/availibility" method="POST">
+            <input type="hidden", name="name", value="<%= asset.name %>">
+            <% if (asset.availibility.toLowerCase() == "availible") { %>
+              <input type="hidden", name="availibility", value="claimed">
+            <%} else {%>
+              <input type="hidden", name="availibility", value="availible">
+            <%}%>
+            <button class="view-button" type="submit">Claim</button>
+          </form>
         </div>
 
         <div class="asset-body">
