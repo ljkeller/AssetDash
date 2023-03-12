@@ -76,7 +76,8 @@ router.put(
             console.log(`Updated asset state: ${updated}`);
         } catch (err) {
             console.log(err.message);
-            res.status(500).send('Error in updating asset availiblity');
+            res.status(500);
+            res.render('oops.ejs', { message: 'Error in updating asset availiblity'});
         }
     }
 )
@@ -99,11 +100,18 @@ router.post(
             const { name } = req.body;
             const asset = await Asset.findOne({ name });
 
-            if (!asset) return res.status(400).json({ message: 'Asset does not exist' });
+            if (!asset) 
+            {
+                res.status(400);
+                res.render('oops.ejs', {message: 'Asset does not exist' });
+                return;
+            }
             res.render('asset.ejs', {asset});
         } catch (err) {
             console.log(err.message);
-            res.status(500).send('Error in retrieval of asset name');
+
+            res.status(500);
+            res.render('oops.ejs', {message: err.message});
         }
     }
 )

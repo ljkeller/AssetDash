@@ -1,0 +1,41 @@
+@import './constants.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: var(--background-color1);
+}
+
+.oops-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 30vw;
+    height: 400px;
+    margin: auto;
+    background-color: var(--background-color2);
+    box-shadow: 1px 1px 15px var(--two-use-color);
+    padding: 50px 30px 30px 30px;
+    border-radius: 5px;
+    margin-top: 100px;
+
+    color: var(--primary-color);
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+    background: linear-gradient(to right, var(--secondary-color-tetr1) 40%, var(--primary-color) 40%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
