@@ -49,6 +49,11 @@ router.post(
     }
 )
 
+/**
+ * @method - PUT
+ * @param - /availiblity
+ * @description - Update the availibility for an existing asset
+ */
 router.put(
     '/availibility',
     [
@@ -76,6 +81,11 @@ router.put(
     }
 )
 
+/**
+ * @method - POST
+ * @param - /info
+ * @description - Get information regarding an existing asset
+ */
 router.post(
     '/info',
     [
