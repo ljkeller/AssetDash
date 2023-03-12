@@ -38,6 +38,8 @@ router.post(
             await asset.save();
 
             const payload = { asset: { id: asset.id } };
+            console.log(`Created new asset: ${payload}`);
+
             res.status(200).json({payload});
         } catch (err)
         {
@@ -58,14 +60,15 @@ router.put(
         if (!errors.isEmpty()) return res.status(400).json({ errors: errors.array() });
 
         //TODO: Validate that only user with asset claimed can undo claim
-        const { assetName, availibility } = req.body;
+        const { name, availibility } = req.body;
         try {
             // To enforce validation, use findOne over findOneAndUpdate
-            let asset = await Asset.findOne({assetName});
+            let asset = await Asset.findOne({name});
             asset.availibility = availibility;
 
             const updated = await asset.save();
             res.status(200).json(updated);
+            console.log(`Updated asset state: ${updated}`);
         } catch (err) {
             console.log(err.message);
             res.status(500).send('Error in updating asset availiblity');

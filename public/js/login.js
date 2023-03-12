@@ -1,9 +1,8 @@
 const form = document.querySelector('.login-box');
 form.addEventListener('submit', (event) => {
-    // dont let user spam empty boxes
     event.preventDefault();
     
-    let payload = JSON.stringify({
+    const payload = JSON.stringify({
         email : document.getElementById('email').value,
         password : document.getElementById('password').value
     });
