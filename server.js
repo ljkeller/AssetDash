@@ -33,7 +33,7 @@ app.get('/dashboard', (req, res) => {
   res.render('index.ejs');
 });
 app.get('/asset', (req, res) => {
-  res.render('asset.ejs');
+  res.render('assets.ejs');
 });
 app.get('/login', (req, res) => {
   res.render('login.ejs');
